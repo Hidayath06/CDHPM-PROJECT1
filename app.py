@@ -16,8 +16,8 @@ warnings.filterwarnings('ignore')
 
 # --- CONFIGURATION ---
 # ⚠️ 1. REPLACE THIS LINK with your actual public download URL for the .h5 file!
-MODEL_URL = "https://huggingface.co/Hidayathulla06/eczema-detector-resnet50/resolve/main/best_transfer_model.keras" 
-LOCAL_MODEL_PATH = "downloaded_model.keras" 
+MODEL_URL = "https://huggingface.co/Hidayathulla06/eczema-detector-resnet50/resolve/main/best_transfer_model_compatible.h5" 
+LOCAL_MODEL_PATH = "downloaded_model_compatible.h5" 
 TARGET_CLASSES = ['Eczema', 'Non-Eczema'] 
 # -----------------------------------
 
@@ -243,4 +243,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
