@@ -9,7 +9,7 @@ import plotly.express as px
 import warnings
 import requests
 import tempfile
-import cv2 # Included but not used in the core logic, keeping for completeness
+#import cv2 # Included but not used in the core logic, keeping for completeness
 import shutil # Included but not used in the core logic, keeping for completeness
 
 warnings.filterwarnings('ignore')
@@ -242,4 +242,5 @@ def main():
         """)
 
 if __name__ == "__main__":
+
     main()
