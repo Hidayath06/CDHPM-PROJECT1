@@ -225,7 +225,7 @@ def main():
                 
                 st.warning("⚠️ **Medical Disclaimer:** This is an AI-generated result. Consult a dermatologist for an accurate diagnosis.")
 
-elif page == "Model Information":
+    elif page == "Model Information":
         st.header("⚙️ Model Details & Project Information")
         st.markdown(f"""
             ## 🧠 Model Architecture & Performance
@@ -258,8 +258,10 @@ elif page == "Model Information":
             ### Technical Notes
             The use of data augmentation (rotation, flipping, zooming) was critical during training to improve the model's ability to generalize to real-world variations in skin images.
         """, unsafe_allow_html=True)
+        
 if __name__ == "__main__":
     main()
+
 
 
 
