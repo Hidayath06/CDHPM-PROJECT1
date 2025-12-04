@@ -1,0 +1,12 @@
+tensorflow
+keras
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+streamlit
+Pillow
+requests
+plotly
+opencv-python # If needed for cv2

@@ -1,0 +1,23 @@
+# Ignore the large trained model file
+best_transfer_model.keras
+
+# === General ML/Python Exclusions ===
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Virtual Environment directories
+.venv/
+venv/
+env/
+
+# Data/Log files
+*.log
+*.csv
+*.zip
+Dataset/  # Optional: Exclude the raw Dataset if it's large
+
+# IDE/OS files (Recommended)
+.DS_Store # Mac
+.vscode/  # VS Code config
+*.ipynb_checkpoints # Jupyter checkpoints
