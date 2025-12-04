@@ -225,23 +225,42 @@ def main():
                 
                 st.warning("⚠️ **Medical Disclaimer:** This is an AI-generated result. Consult a dermatologist for an accurate diagnosis.")
 
-    elif page == "Model Information":
-        st.header("⚙️ Model Details")
+   elif page == "Model Information":
+        st.header("⚙️ Model Details & Project Information")
         st.markdown(f"""
-            ### Model Architecture:
-            * **Base Model:** ResNet50 (Transfer Learning)
+            ## 🧠 Model Architecture & Performance
+            ---
+            The model uses **Transfer Learning** with the powerful ResNet50 architecture. This technique utilizes features pre-trained on the vast ImageNet dataset to efficiently classify skin conditions.
+
+            * **Base Model:** ResNet50 (Residual Network with 50 layers)
+            * **Transfer Learning:** Only the final classification head was trained; the 50 base layers were frozen.
             * **Input Size:** 224x224 pixels (RGB)
             * **Output Classes:** {', '.join(TARGET_CLASSES)}
             
-            ### Data Source & Training:
-            * The model was trained on a specific dataset related to Eczema/Non-Eczema classification. (If you have details on the dataset, add them here.)
+            ### Final Test Set Metrics
+            The model was rigorously evaluated on a completely unseen test set:
+            * **Accuracy:** **98.40%** * **F1-Score (Eczema):** **0.98**
+            * **F1-Score (Non-Eczema):** **0.98**
+            
+            <br>
+            
+            ## 👨‍💻 Project Developer Information
+            ---
+            * **Developer Name:** **S A Hidayathulla**
+            * **Project/System Name:** **CDHPM-PROJECT1: Eczema Detection System**
+            * **College/Institution:** **The Apollo University**
+            * **Academic Year:** **[2024-2025]**
+            * **Technology Stack:** Python, TensorFlow/Keras, ResNet50, Streamlit, Plotly, Hugging Face
+            * **GitHub Repository:** [https://github.com/Hidayath06/CDHPM-PROJECT1](https://github.com/Hidayath06/CDHPM-PROJECT1)
             * **Model File Location:** [Hugging Face Repository]({MODEL_URL})
             
-            ### Technical Notes:
-            * The model is loaded once and cached using `@st.cache_resource` for fast subsequent runs.
-        """)
-
+            <br>
+            
+            ### Technical Notes
+            The use of data augmentation (rotation, flipping, zooming) was critical during training to improve the model's ability to generalize to real-world variations in skin images.
+        """, unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
+
 
 
