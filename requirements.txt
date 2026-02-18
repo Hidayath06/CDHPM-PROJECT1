@@ -9,3 +9,5 @@ streamlit
 Pillow
 requests
 plotly
+protobuf<=3.20.*
+
